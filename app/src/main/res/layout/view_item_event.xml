@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium_2"/>
+
+    <TextView
+        android:id="@+id/tv_birthday_party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birthday_party"
+        android:layout_toEndOf="@+id/iv_profile"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_birthday_party"
+        android:text="@string/party_time"
+        android:layout_alignStart="@+id/tv_birthday_party"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/iv_gender_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_filter_vintage_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/iv_profile"
+        android:layout_marginEnd="@dimen/margin_medium" />
+
+    <TextView
+        android:id="@+id/tv_age_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_range"
+        android:layout_below="@+id/iv_gender_sign"
+        android:layout_alignEnd="@+id/iv_gender_sign"
+        android:layout_marginTop="@dimen/margin_small"/>
+
+    <TextView
+        android:id="@+id/tv_ygn_bbq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ygn_bbq"
+        android:layout_below="@+id/iv_profile"
+        android:layout_alignStart="@+id/iv_profile"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:layout_below="@+id/tv_ygn_bbq"
+        android:layout_alignStart="@+id/tv_ygn_bbq"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:textSize="@dimen/text_regular" />
+
+    <ImageView
+        android:id="@+id/iv_profile_1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@+id/tv_address"
+        android:layout_alignStart="@+id/iv_profile"
+        android:layout_marginTop="@dimen/margin_medium_2" />
+
+    <TextView
+        android:id="@+id/tv_john"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/john_name"
+        android:layout_toEndOf="@+id/iv_profile_1"
+        android:layout_alignTop="@+id/iv_profile_1"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_cmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/john_name"
+        android:layout_below="@+id/tv_john"
+        android:layout_alignStart="@+id/tv_john"/>
+
+</RelativeLayout>
